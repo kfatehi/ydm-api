@@ -1,0 +1,22 @@
+{
+  "name": "ydm-api",
+  "version": "0.0.0",
+  "description": "API frontend to ydm, yet another docker manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.knban.com/saasbox/ydm-api.git"
+  },
+  "author": "Keyvan Fatehi",
+  "license": "",
+  "dependencies": {
+    "body-parser": "^1.6.7",
+    "express": "^4.8.7",
+    "winston": "^0.7.3",
+    "ydm": "0.0.9"
+  }
+}
