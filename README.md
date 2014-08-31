@@ -32,3 +32,16 @@ Clone it.
 ## Security
 
 Set env var YDM_API_SECRET to require all requests to include header X-Auth-Token with that string. Use SSL
+
+## Example Supervisor Config
+
+```
+[program:ydm-api]
+command=/home/keyvan/src/ydm-api/server.js
+directory=/home/keyvan
+stdout_logfile=/var/log/supervisor/%(program_name)s.log
+redirect_stderr=true
+autorestart=true
+user=keyvan
+environment=YDM_API_SECRET=secret,DOCKER_HOST=tcp://127.0.0.1:4243,YDM_API_DROPS=/home/keyvan/.ydm-api/drops,YDM_HOME=/home/keyvan/.ydm-api
+```
