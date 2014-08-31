@@ -1,8 +1,11 @@
 {
   "name": "ydm-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "API frontend to ydm (yet another docker manager)",
   "main": "server.js",
+  "bin": {
+    "ydm-api": "server.js"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
