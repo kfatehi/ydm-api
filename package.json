@@ -1,6 +1,6 @@
 {
   "name": "ydm-api",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "API frontend to ydm (yet another docker manager)",
   "main": "server.js",
   "bin": {
@@ -21,6 +21,6 @@
     "express": "^4.8.7",
     "lodash": "^2.4.1",
     "winston": "^0.7.3",
-    "ydm": "1.0.0"
+    "ydm": "1.0.2"
   }
 }
