@@ -21,5 +21,5 @@ module.exports = function (r) {
    * POST /drops/:name/:action
    * Perform an action against a drop
    */
-  .post(perform)
+  .post(bodyParser.json(), perform)
 }
