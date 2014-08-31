@@ -1,8 +1,8 @@
 {
   "name": "ydm-api",
-  "version": "0.0.0",
-  "description": "API frontend to ydm, yet another docker manager",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "API frontend to ydm (yet another docker manager)",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,11 +12,12 @@
     "url": "https://gitlab.knban.com/saasbox/ydm-api.git"
   },
   "author": "Keyvan Fatehi",
-  "license": "",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.6.7",
     "express": "^4.8.7",
+    "lodash": "^2.4.1",
     "winston": "^0.7.3",
-    "ydm": "0.0.9"
+    "ydm": "0.2.1"
   }
 }
