@@ -1,5 +1,11 @@
 var path = require('path')
-  , dropsHome = path.resolve(__dirname+'/../drops')
+  , dropsPath = path.resolve(process.env.YDM_API_DROPS || path.join(process.env.HOME, ".ydm-api", "drops"))
   , Ydm = require('ydm')
+  , logger = require('winston')
 
-module.exports = new Ydm({ dropsPath: dropsHome })
+logger.info('Using drops path '+dropsPath)
+logger.info('You can override the drops path with env var YDM_API_DROPS')
+
+module.exports = new Ydm({
+  dropsPath: dropsPath
+});
