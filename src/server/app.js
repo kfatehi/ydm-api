@@ -29,5 +29,9 @@ app.use('/api/v1/', require('./routes'));
 
 module.exports = {
   http: http,
-  app: app
+  app: app,
+  ydm: require('../ydm'),
+  middleware: {
+    authorize: require('./middleware/authorize')
+  }
 }
